@@ -1,0 +1,25 @@
+name: quran_bridge
+description: A Flutter federated plugin for Quran data, bookmarks, and audio playback.
+version: 0.1.0
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: '>=3.10.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  quran_bridge_platform_interface:
+    path: ../quran_bridge_platform_interface
+  quran_bridge_android:
+    path: ../quran_bridge_android
+  quran_bridge_ios:
+    path: ../quran_bridge_ios
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        default_package: quran_bridge_android
+      ios:
+        default_package: quran_bridge_ios

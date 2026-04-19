@@ -1,0 +1,12 @@
+name: quran_bridge_platform_interface
+description: Platform interface for the quran_bridge plugin.
+version: 0.1.0
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: '>=3.10.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  plugin_platform_interface: ^2.1.8

@@ -1,0 +1,22 @@
+name: quran_bridge_android
+description: Android implementation of the quran_bridge plugin.
+version: 0.1.0
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: '>=3.10.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  quran_bridge_platform_interface:
+    path: ../quran_bridge_platform_interface
+
+flutter:
+  plugin:
+    implements: quran_bridge
+    platforms:
+      android:
+        dartPluginClass: QuranBridgeAndroid
+        package: dev.quran.bridge
+        pluginClass: QuranBridgePlugin
